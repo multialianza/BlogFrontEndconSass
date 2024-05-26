@@ -1,0 +1,35 @@
+@mixin button-type {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 40px ;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  
+  .form-login__button {
+    @include button-type();
+      width: 100%;
+      margin: 5px 0;
+      background-color: #729E2E;
+      height: 40px;
+      color: #fff;
+  
+      &--google {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #171717;
+        margin-bottom: 10px;
+      }
+      -img {
+        margin-right: 10px;
+      }
+  }
+  .form-subscription__button {
+    margin-left: 70px;
+    width: 150px;
+    @include button-type();
+  }
+  

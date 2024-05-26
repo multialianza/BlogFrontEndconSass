@@ -1,0 +1,82 @@
+@mixin form-characteristics{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  @mixin form-decoration {
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .form-login {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 400px;
+      text-align: center;
+  
+    &__title {
+      width: 100%;
+      font-weight: 400;
+    }
+    &_register-link {
+      @include form-decoration()
+    }
+  
+    &__input {
+      width: 100%;
+      height: 50px;
+      margin: 10px 0;
+      padding-left: 20px;
+      font-size: large;
+      font-weight: 100;
+      @include form-characteristics()
+    }
+  }
+  
+    .form-options {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    
+      &__checkbox {
+        margin-right: 10px;
+    }
+      &__forget-password {
+        margin-bottom: 20px;
+        @include form-decoration()  
+    }
+  }
+    
+  
+  //listo  
+    .form-subscription {
+    
+      width: 850px;
+      height: 200px;
+      background-color: #729E2E;
+      margin-top: 100px;
+      color: #fff;
+      margin-left: 300px;
+      margin-bottom: 20px;
+      @include form-characteristics()
+    }
+    
+    .form-subscription_title {
+      width: 600px;
+      height: 80px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .form-subscription__input {
+      width: 500px;
+      height: 40px;
+      margin-left: 50px;
+      display: inline-block;
+      @include form-characteristics()
+    }
+  
